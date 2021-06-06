@@ -1,0 +1,1072 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7794411044523867384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99766d3dad6c36e40b408290706f07c8, type: 3}
+  m_Name: Thursday, October 22, 2020 1:33 PM :8s Visibility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2008, y: -568}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -7794411044523867384}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: 3986655369849819376}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -7794411044523867384}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: -7794411044523867384}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: -7794411044523867384}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0.5
+  IsTrigger: 1
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 10
+  InputType: 0
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 9
+  IsDeleted: 0
+  Id: Thursday, October 22, 2020 1:33 PM :8s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsVisible: 0
+--- !u!114 &-6593916424595885381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99766d3dad6c36e40b408290706f07c8, type: 3}
+  m_Name: Thursday, October 22, 2020 12:51 PM :57s Visibility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1608, y: 264}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -6593916424595885381}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: -5528469307820827159}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -6593916424595885381}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: -12422989119095175}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: -6593916424595885381}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Send
+        node: {fileID: -2514273587909680404}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: -6593916424595885381}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsTrigger: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 10
+  InputType: 0
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 9
+  IsDeleted: 0
+  Id: Thursday, October 22, 2020 12:51 PM :57s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsVisible: 0
+--- !u!114 &-5528469307820827159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99766d3dad6c36e40b408290706f07c8, type: 3}
+  m_Name: Thursday, October 22, 2020 12:51 PM :35s Visibility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1112, y: -40}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -5528469307820827159}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: 6536629546800634780}
+        reroutePoints: []
+      - fieldName: Next
+        node: {fileID: -2514273587909680404}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -5528469307820827159}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: 3986655369849819376}
+        reroutePoints: []
+      - fieldName: Previous
+        node: {fileID: -6593916424595885381}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: -5528469307820827159}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: -5528469307820827159}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsTrigger: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 10
+  InputType: 0
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 9
+  IsDeleted: 0
+  Id: Thursday, October 22, 2020 12:51 PM :35s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsVisible: 0
+--- !u!114 &-4921852820508309981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471ea85080efd28449459df8c132be40, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -8, y: -88}
+  ports:
+    keys:
+    - Next
+    values:
+    - _fieldName: Next
+      _node: {fileID: -4921852820508309981}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: -3748943423814366551}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _: Disabled
+  IsEnabled: 1
+--- !u!114 &-3748943423814366551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e26266861ab314aa8372093f1cf031, type: 3}
+  m_Name: Monday, November 2, 2020 2:17 PM :27s MakeChild
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 168, y: 456}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -3748943423814366551}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: -4921852820508309981}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -3748943423814366551}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: -3748943423814366551}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: -3748943423814366551}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: test
+  Delay: 0
+  IsTrigger: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 10
+  InputType: 0
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 1
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 16
+  IsDeleted: 0
+  Id: Monday, November 2, 2020 2:17 PM :27s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsFollowPos: 0
+  IsFollowRot: 1
+--- !u!114 &-2514273587909680404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e04172a6cff22b40a8b0dc7fce76051, type: 3}
+  m_Name: Saturday, October 24, 2020 11:26 AM :24s Pickup
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 664, y: 136}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -2514273587909680404}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: 377612310211932191}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -2514273587909680404}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: -5528469307820827159}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: -2514273587909680404}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: -2514273587909680404}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Recieve
+        node: {fileID: -6593916424595885381}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsTrigger: 1
+  IsColorInput: 1
+  _: Below Settings are changed
+  TriggerTag: 20
+  InputType: 1
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 1
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 6
+  IsDeleted: 0
+  Id: Saturday, October 24, 2020 11:26 AM :24s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  MinDistance: 0.3
+--- !u!114 &-12422989119095175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99766d3dad6c36e40b408290706f07c8, type: 3}
+  m_Name: Thursday, October 22, 2020 1:33 PM :19s Visibility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2040, y: 264}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -12422989119095175}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: -6593916424595885381}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -12422989119095175}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: -12422989119095175}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: -12422989119095175}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0.5
+  IsTrigger: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 10
+  InputType: 0
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 9
+  IsDeleted: 0
+  Id: Thursday, October 22, 2020 1:33 PM :19s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsVisible: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ca55b57adc544409e0c399c28fbfba, type: 3}
+  m_Name: testScene_Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -4921852820508309981}
+  - {fileID: 377612310211932191}
+  - {fileID: 7370478849081481228}
+  - {fileID: 3999709006466217313}
+  - {fileID: -5528469307820827159}
+  - {fileID: 3986655369849819376}
+  - {fileID: -6593916424595885381}
+  - {fileID: -7794411044523867384}
+  - {fileID: -12422989119095175}
+  - {fileID: 6536629546800634780}
+  - {fileID: -2514273587909680404}
+  - {fileID: -3748943423814366551}
+  current:
+  - {fileID: -3748943423814366551}
+  SearchQuery: Query
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+--- !u!114 &377612310211932191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99766d3dad6c36e40b408290706f07c8, type: 3}
+  m_Name: Thursday, October 22, 2020 12:44 PM :43s Visibility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 184, y: -104}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 377612310211932191}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 377612310211932191}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: 6536629546800634780}
+        reroutePoints: []
+      - fieldName: Previous
+        node: {fileID: -2514273587909680404}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 377612310211932191}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 377612310211932191}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsTrigger: 1
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 10
+  InputType: 0
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 1
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 9
+  IsDeleted: 0
+  Id: Thursday, October 22, 2020 12:44 PM :43s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsVisible: 0
+--- !u!114 &3986655369849819376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99766d3dad6c36e40b408290706f07c8, type: 3}
+  m_Name: Thursday, October 22, 2020 12:51 PM :53s Visibility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1576, y: -584}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 3986655369849819376}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: -5528469307820827159}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 3986655369849819376}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: -7794411044523867384}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 3986655369849819376}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Send
+        node: {fileID: 6536629546800634780}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 3986655369849819376}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0.5
+  IsTrigger: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 10
+  InputType: 0
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 9
+  IsDeleted: 0
+  Id: Thursday, October 22, 2020 12:51 PM :53s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsVisible: 0
+--- !u!114 &3999709006466217313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99766d3dad6c36e40b408290706f07c8, type: 3}
+  m_Name: Thursday, October 22, 2020 12:50 PM :44s Visibility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 328, y: -904}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 3999709006466217313}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 3999709006466217313}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 3999709006466217313}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 3999709006466217313}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsTrigger: 1
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 40
+  InputType: 1
+  IsPreInputRequired: 1
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 9
+  IsDeleted: 0
+  Id: Thursday, October 22, 2020 12:50 PM :44s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsVisible: 0
+--- !u!114 &6536629546800634780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e04172a6cff22b40a8b0dc7fce76051, type: 3}
+  m_Name: Saturday, October 24, 2020 11:09 AM :13s Pickup
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 664, y: -328}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 6536629546800634780}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: 377612310211932191}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 6536629546800634780}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: -5528469307820827159}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 6536629546800634780}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 6536629546800634780}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Recieve
+        node: {fileID: 3986655369849819376}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsTrigger: 1
+  IsColorInput: 1
+  _: Below Settings are changed
+  TriggerTag: 20
+  InputType: 1
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 1
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 6
+  IsDeleted: 0
+  Id: Saturday, October 24, 2020 11:09 AM :13s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  MinDistance: 0.3
+--- !u!114 &7370478849081481228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99766d3dad6c36e40b408290706f07c8, type: 3}
+  m_Name: Thursday, October 22, 2020 12:50 PM :39s Visibility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 328, y: -1352}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 7370478849081481228}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 7370478849081481228}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 7370478849081481228}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 7370478849081481228}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsTrigger: 1
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: 40
+  InputType: 1
+  IsPreInputRequired: 1
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Type: 9
+  IsDeleted: 0
+  Id: Thursday, October 22, 2020 12:50 PM :39s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  IsSent: 0
+  IsVisible: 0

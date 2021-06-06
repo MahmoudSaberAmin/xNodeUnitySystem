@@ -1,0 +1,4 @@
+IS TRigger after start
+None -> Return;
+
+Scene Node is not working
