@@ -29,7 +29,7 @@ public class LookAtSomething : ILookAt
             if (LookAtTransform == null)
             {
                 lookAtScript.ObjectToFollow = null;
-
+                 
             }
             else
             {
