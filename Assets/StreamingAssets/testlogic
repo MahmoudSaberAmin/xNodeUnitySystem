@@ -1,0 +1,395 @@
+{
+    "$id": 0,
+    "$type": "0|SystemsGraph, Assembly-CSharp",
+    "nodes": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[XNode.Node, XNode]], mscorlib",
+        "$rlength": 3,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "2|StartNode, Assembly-CSharp",
+                "graph": $iref:0,
+                "position": {
+                    "$type": "3|UnityEngine.Vector2, UnityEngine.CoreModule",
+                    -8,
+                    -40
+                },
+                "ports": {
+                    "$id": 3,
+                    "$type": "4|XNode.Node+NodePortDictionary, XNode",
+                    "comparer": {
+                        "$id": 4,
+                        "$type": "5|System.Collections.Generic.GenericEqualityComparer`1[[System.String, mscorlib]], mscorlib"
+                    },
+                    "$rlength": 1,
+                    "$rcontent": [
+                        {
+                            "$k": "Next",
+                            "$v": {
+                                "$id": 5,
+                                "$type": "6|XNode.NodePort, XNode",
+                                "_fieldName": "Next",
+                                "_node": $iref:2,
+                                "_typeQualifiedName": "Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                "connections": {
+                                    "$id": 6,
+                                    "$type": "7|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]], mscorlib",
+                                    "$rlength": 1,
+                                    "$rcontent": [
+                                        {
+                                            "$id": 7,
+                                            "$type": "8|XNode.NodePort+PortConnection, XNode",
+                                            "fieldName": "Previous",
+                                            "node": {
+                                                "$id": 8,
+                                                "$type": "9|AnimationNode, Assembly-CSharp",
+                                                "graph": $iref:0,
+                                                "position": {
+                                                    "$type": 3,
+                                                    200,
+                                                    -184
+                                                },
+                                                "ports": {
+                                                    "$id": 9,
+                                                    "$type": 4,
+                                                    "comparer": $iref:4,
+                                                    "$rlength": 2,
+                                                    "$rcontent": [
+                                                        {
+                                                            "$k": "Previous",
+                                                            "$v": {
+                                                                "$id": 10,
+                                                                "$type": 6,
+                                                                "_fieldName": "Previous",
+                                                                "_node": $iref:8,
+                                                                "_typeQualifiedName": "Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                                "connections": {
+                                                                    "$id": 11,
+                                                                    "$type": 7,
+                                                                    "$rlength": 1,
+                                                                    "$rcontent": [
+                                                                        {
+                                                                            "$id": 12,
+                                                                            "$type": 8,
+                                                                            "fieldName": "Next",
+                                                                            "node": $iref:2,
+                                                                            "reroutePoints": {
+                                                                                "$id": 13,
+                                                                                "$type": "10|System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib",
+                                                                                "$rlength": 0,
+                                                                                "$rcontent": [
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "_direction": 0,
+                                                                "_connectionType": 0,
+                                                                "_typeConstraint": 0,
+                                                                "_dynamic": false
+                                                            }
+                                                        },
+                                                        {
+                                                            "$k": "Next",
+                                                            "$v": {
+                                                                "$id": 14,
+                                                                "$type": 6,
+                                                                "_fieldName": "Next",
+                                                                "_node": $iref:8,
+                                                                "_typeQualifiedName": "Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                                "connections": {
+                                                                    "$id": 15,
+                                                                    "$type": 7,
+                                                                    "$rlength": 1,
+                                                                    "$rcontent": [
+                                                                        {
+                                                                            "$id": 16,
+                                                                            "$type": 8,
+                                                                            "fieldName": "Previous",
+                                                                            "node": {
+                                                                                "$id": 17,
+                                                                                "$type": "11|AudioNode, Assembly-CSharp",
+                                                                                "graph": $iref:0,
+                                                                                "position": {
+                                                                                    "$type": 3,
+                                                                                    552,
+                                                                                    -168
+                                                                                },
+                                                                                "ports": {
+                                                                                    "$id": 18,
+                                                                                    "$type": 4,
+                                                                                    "comparer": $iref:4,
+                                                                                    "$rlength": 2,
+                                                                                    "$rcontent": [
+                                                                                        {
+                                                                                            "$k": "Previous",
+                                                                                            "$v": {
+                                                                                                "$id": 19,
+                                                                                                "$type": 6,
+                                                                                                "_fieldName": "Previous",
+                                                                                                "_node": $iref:17,
+                                                                                                "_typeQualifiedName": "Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                                                                "connections": {
+                                                                                                    "$id": 20,
+                                                                                                    "$type": 7,
+                                                                                                    "$rlength": 1,
+                                                                                                    "$rcontent": [
+                                                                                                        {
+                                                                                                            "$id": 21,
+                                                                                                            "$type": 8,
+                                                                                                            "fieldName": "Next",
+                                                                                                            "node": $iref:8,
+                                                                                                            "reroutePoints": {
+                                                                                                                "$id": 22,
+                                                                                                                "$type": 10,
+                                                                                                                "$rlength": 0,
+                                                                                                                "$rcontent": [
+                                                                                                                ]
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "_direction": 0,
+                                                                                                "_connectionType": 0,
+                                                                                                "_typeConstraint": 0,
+                                                                                                "_dynamic": false
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "$k": "Next",
+                                                                                            "$v": {
+                                                                                                "$id": 23,
+                                                                                                "$type": 6,
+                                                                                                "_fieldName": "Next",
+                                                                                                "_node": $iref:17,
+                                                                                                "_typeQualifiedName": "Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                                                                "connections": {
+                                                                                                    "$id": 24,
+                                                                                                    "$type": 7,
+                                                                                                    "$rlength": 0,
+                                                                                                    "$rcontent": [
+                                                                                                    ]
+                                                                                                },
+                                                                                                "_direction": 1,
+                                                                                                "_connectionType": 0,
+                                                                                                "_typeConstraint": 0,
+                                                                                                "_dynamic": false
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                "IsUnlocked": true,
+                                                                                "serializationData": {
+                                                                                    "$type": "12|OdinSerializer.SerializationData, OdinSerializer",
+                                                                                    "SerializedFormat": 2,
+                                                                                    "SerializedBytes": null,
+                                                                                    "ReferencedUnityObjects": {
+                                                                                        "$id": 25,
+                                                                                        "$type": "13|System.Collections.Generic.List`1[[UnityEngine.Object, UnityEngine.CoreModule]], mscorlib",
+                                                                                        "$rlength": 0,
+                                                                                        "$rcontent": [
+                                                                                        ]
+                                                                                    },
+                                                                                    "SerializedBytesString": null,
+                                                                                    "Prefab": null,
+                                                                                    "PrefabModificationsReferencedUnityObjects": null,
+                                                                                    "PrefabModifications": null,
+                                                                                    "SerializationNodes": {
+                                                                                        "$id": 26,
+                                                                                        "$type": "14|System.Collections.Generic.List`1[[OdinSerializer.SerializationNode, OdinSerializer]], mscorlib",
+                                                                                        "$rlength": 0,
+                                                                                        "$rcontent": [
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "Previous": {
+                                                                                    "$id": 27,
+                                                                                    "$type": "15|Empty, Assembly-CSharp"
+                                                                                },
+                                                                                "Next": {
+                                                                                    "$id": 28,
+                                                                                    "$type": 15
+                                                                                },
+                                                                                "SerializedName": null,
+                                                                                "Type": 3,
+                                                                                "IsDeleted": false,
+                                                                                "Tag": null,
+                                                                                "Id": "9 24 2020 1:19:45 PM",
+                                                                                "TriggerTag": 10,
+                                                                                "Delay": 0,
+                                                                                "Help": null,
+                                                                                "IsTrigger": true,
+                                                                                "IsPreInputRequired": false,
+                                                                                "IsPostInputRequired": false,
+                                                                                "NodeParent": {
+                                                                                    "$id": 29,
+                                                                                    "$type": "16|UnityEngine.GameObject, UnityEngine.CoreModule"
+                                                                                },
+                                                                                "Implementations": {
+                                                                                    "$id": 30,
+                                                                                    "$type": "17|System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib",
+                                                                                    "$rlength": 1,
+                                                                                    "$rcontent": [
+                                                                                        {
+                                                                                            "$id": 31,
+                                                                                            "$type": 16
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                "Controller": {
+                                                                                    "$id": 32,
+                                                                                    "$type": "18|AudioController, Assembly-CSharp",
+                                                                                    "SystemNode": $iref:17,
+                                                                                    "_assignedNode": $iref:17
+                                                                                },
+                                                                                "InputType": 0,
+                                                                                "Clip": null
+                                                                            },
+                                                                            "reroutePoints": {
+                                                                                "$id": 33,
+                                                                                "$type": 10,
+                                                                                "$rlength": 0,
+                                                                                "$rcontent": [
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "_direction": 1,
+                                                                "_connectionType": 0,
+                                                                "_typeConstraint": 0,
+                                                                "_dynamic": false
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "IsUnlocked": true,
+                                                "serializationData": {
+                                                    "$type": 12,
+                                                    "SerializedFormat": 2,
+                                                    "SerializedBytes": null,
+                                                    "ReferencedUnityObjects": {
+                                                        "$id": 34,
+                                                        "$type": 13,
+                                                        "$rlength": 0,
+                                                        "$rcontent": [
+                                                        ]
+                                                    },
+                                                    "SerializedBytesString": null,
+                                                    "Prefab": null,
+                                                    "PrefabModificationsReferencedUnityObjects": null,
+                                                    "PrefabModifications": null,
+                                                    "SerializationNodes": {
+                                                        "$id": 35,
+                                                        "$type": 14,
+                                                        "$rlength": 0,
+                                                        "$rcontent": [
+                                                        ]
+                                                    }
+                                                },
+                                                "Previous": {
+                                                    "$id": 36,
+                                                    "$type": 15
+                                                },
+                                                "Next": {
+                                                    "$id": 37,
+                                                    "$type": 15
+                                                },
+                                                "SerializedName": null,
+                                                "Type": 4,
+                                                "IsDeleted": false,
+                                                "Tag": null,
+                                                "Id": "9 24 2020 1:19:41 PM",
+                                                "TriggerTag": 10,
+                                                "Delay": 0,
+                                                "Help": null,
+                                                "IsTrigger": true,
+                                                "IsPreInputRequired": false,
+                                                "IsPostInputRequired": false,
+                                                "NodeParent": {
+                                                    "$id": 38,
+                                                    "$type": 16
+                                                },
+                                                "Implementations": {
+                                                    "$id": 39,
+                                                    "$type": 17,
+                                                    "$rlength": 1,
+                                                    "$rcontent": [
+                                                        {
+                                                            "$id": 40,
+                                                            "$type": 16
+                                                        }
+                                                    ]
+                                                },
+                                                "Controller": {
+                                                    "$id": 41,
+                                                    "$type": "19|AnimationController, Assembly-CSharp",
+                                                    "SystemNode": $iref:8,
+                                                    "_assignedNode": $iref:8
+                                                },
+                                                "InputType": 0,
+                                                "AnimatorController": null,
+                                                "AnimatorAvatar": null,
+                                                "AnimatorParamterName": 10,
+                                                "Animation": null
+                                            },
+                                            "reroutePoints": {
+                                                "$id": 42,
+                                                "$type": 10,
+                                                "$rlength": 0,
+                                                "$rcontent": [
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "_direction": 1,
+                                "_connectionType": 0,
+                                "_typeConstraint": 0,
+                                "_dynamic": false
+                            }
+                        }
+                    ]
+                },
+                "Next": {
+                    "$id": 43,
+                    "$type": 15
+                }
+            },
+            $iref:8,
+            $iref:17
+        ]
+    },
+    "current": {
+        "$id": 44,
+        "$type": "20|System.Collections.Generic.List`1[[SystemNode, Assembly-CSharp]], mscorlib",
+        "$rlength": 1,
+        "$rcontent": [
+            $iref:8
+        ]
+    },
+    "serializationData": {
+        "$type": 12,
+        "SerializedFormat": 2,
+        "SerializedBytes": null,
+        "ReferencedUnityObjects": {
+            "$id": 45,
+            "$type": 13,
+            "$rlength": 0,
+            "$rcontent": [
+            ]
+        },
+        "SerializedBytesString": null,
+        "Prefab": null,
+        "PrefabModificationsReferencedUnityObjects": null,
+        "PrefabModifications": null,
+        "SerializationNodes": {
+            "$id": 46,
+            "$type": 14,
+            "$rlength": 0,
+            "$rcontent": [
+            ]
+        }
+    }
+}

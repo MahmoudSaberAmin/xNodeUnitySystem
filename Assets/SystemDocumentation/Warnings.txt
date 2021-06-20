@@ -1,0 +1,6 @@
+1.1 All Objects in the scene must be activated.
+1.2 Write your own script to disable objects on start.
+Reason:
+Objects cant be got by tag while they are disabled.
+1.3 Before updating in collab, Make sure to take backup from Assets and Project settings
+1.4 Before making a collab from a "development" PC which doesnot modify any project, Make sure to revert Tag Manager Asset Before making collab

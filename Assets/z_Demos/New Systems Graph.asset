@@ -1,0 +1,568 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1348275550029735760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80037705726c2f46ad5ccf141e3abfc, type: 3}
+  m_Name: 7 Jun 2021 12 14 :45s Audio
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -376, y: -296}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -1348275550029735760}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -1348275550029735760}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: 5579066673579602975}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: -1348275550029735760}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: -1348275550029735760}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: None
+  InputType: None
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  IsValid: 1
+  Type: 3
+  IsDeleted: 0
+  Id: 7 Jun 2021 12 14 :45s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  Graph: {fileID: 11400000}
+  IsSent: 0
+  Clip: {fileID: 8300000, guid: e530a4bc1cc89d843a05f5e53a3530d7, type: 3}
+  IsCustomStartOrEnd: 0
+  StartTime: 0
+  EndTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ca55b57adc544409e0c399c28fbfba, type: 3}
+  m_Name: New Systems Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1466629738331252692}
+  - {fileID: -1348275550029735760}
+  - {fileID: 5579066673579602975}
+  - {fileID: 4787889637958388312}
+  - {fileID: 2060226450607840100}
+  - {fileID: 2291819818446184722}
+  - {fileID: 8753190127050080769}
+  current:
+  - {fileID: 2291819818446184722}
+  IsSystemV1: 0
+  SearchQuery: a
+  SceneAssetName: 'FixTest1 [FixBugs] '
+  ScenePath: Assets/z_Demos/FixBugs.unity
+  IsGraphAceneAssetSet: 1
+--- !u!114 &1466629738331252692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471ea85080efd28449459df8c132be40, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -552, y: -104}
+  ports:
+    keys:
+    - Next
+    values:
+    - _fieldName: Next
+      _node: {fileID: 1466629738331252692}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: 2291819818446184722}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _: Disabled
+  IsEnabled: 1
+--- !u!114 &2060226450607840100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab51153ad2dd11b4fb211e478b51bfd0, type: 3}
+  m_Name: 25 May 2021 10 32 :5s Tween
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2680, y: -792}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 2060226450607840100}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 2060226450607840100}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 2060226450607840100}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 2060226450607840100}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: None
+  InputType: 
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 1
+  IsValid: 0
+  Type: 8
+  IsDeleted: 1
+  Id: 25 May 2021 10 32 :5s
+  NodeParent: {fileID: 0}
+  Implementations: []
+  Controller: {fileID: 0}
+  Graph: {fileID: 11400000}
+  IsSent: 0
+  AnimationType: 0
+  LoopType: 0
+  EaseType: 0
+  EndAnimationTransform: {fileID: 0}
+  IsImageComponent: 0
+  EndAlpha: 1
+  Time: 1
+--- !u!114 &2291819818446184722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedfcd2b125bea14580f6f022126113c, type: 3}
+  m_Name: 15 Jun 2021 2 26 :25s Text
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -256.79904, y: 236.3453}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 2291819818446184722}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: 1466629738331252692}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 2291819818446184722}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: 8753190127050080769}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 2291819818446184722}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 2291819818446184722}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: None
+  InputType: VRInput
+  IsPreInputRequired: 0
+  IsPostInputRequired: 1
+  IsUnlocked: 1
+  IsValid: 1
+  Type: 5
+  IsDeleted: 0
+  Id: 15 Jun 2021 2 26 :25s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  Graph: {fileID: 11400000}
+  IsSent: 0
+  WorldCanvasPrefab: {fileID: 5399338541819053678, guid: 236cdbbcd0211a24db238506b1b2ace2,
+    type: 3}
+  TextString: It's working
+  ShowTime: 0
+  IsCameraFollow: 0
+  Scale: 1
+--- !u!114 &4787889637958388312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80037705726c2f46ad5ccf141e3abfc, type: 3}
+  m_Name: 7 Jun 2021 12 16 :16s Audio
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 407.01392, y: -347.6362}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 4787889637958388312}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: 5579066673579602975}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 4787889637958388312}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 4787889637958388312}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 4787889637958388312}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: None
+  InputType: None
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  IsValid: 1
+  Type: 3
+  IsDeleted: 0
+  Id: 7 Jun 2021 12 16 :16s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  Graph: {fileID: 11400000}
+  IsSent: 0
+  Clip: {fileID: 8300000, guid: daf25c970d372cf438f0679f0c83b5fc, type: 3}
+  IsCustomStartOrEnd: 0
+  StartTime: 0
+  EndTime: 0
+--- !u!114 &5579066673579602975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedfcd2b125bea14580f6f022126113c, type: 3}
+  m_Name: 7 Jun 2021 12 15 :42s Text
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 30.25936, y: -418.31506}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 5579066673579602975}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: -1348275550029735760}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 5579066673579602975}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Previous
+        node: {fileID: 4787889637958388312}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 5579066673579602975}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 5579066673579602975}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: None
+  InputType: VRInput
+  IsPreInputRequired: 0
+  IsPostInputRequired: 1
+  IsUnlocked: 0
+  IsValid: 1
+  Type: 5
+  IsDeleted: 0
+  Id: 7 Jun 2021 12 15 :42s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  Graph: {fileID: 11400000}
+  IsSent: 0
+  WorldCanvasPrefab: {fileID: 5399338541819053678, guid: 236cdbbcd0211a24db238506b1b2ace2,
+    type: 3}
+  TextString: bvncbnnb
+  ShowTime: 0
+  IsCameraFollow: 0
+  Scale: 1
+--- !u!114 &8753190127050080769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80037705726c2f46ad5ccf141e3abfc, type: 3}
+  m_Name: 15 Jun 2021 2 34 :54s Audio
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 122, y: 301.5}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: 8753190127050080769}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Next
+        node: {fileID: 2291819818446184722}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: 8753190127050080769}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: 8753190127050080769}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: 8753190127050080769}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: None
+  InputType: None
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  IsValid: 1
+  Type: 3
+  IsDeleted: 0
+  Id: 15 Jun 2021 2 34 :54s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  Graph: {fileID: 11400000}
+  IsSent: 0
+  Clip: {fileID: 8300000, guid: e530a4bc1cc89d843a05f5e53a3530d7, type: 3}
+  IsCustomStartOrEnd: 0
+  StartTime: 0
+  EndTime: 0
