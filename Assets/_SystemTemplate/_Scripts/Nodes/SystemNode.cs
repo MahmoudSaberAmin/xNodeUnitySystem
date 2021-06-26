@@ -34,6 +34,7 @@ public enum SystemType
     Mouth,
     LookAt,
     Timeline,
+    Hand,
 }
 
 
