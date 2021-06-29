@@ -154,17 +154,26 @@ public class SystemsGraph : NodeGraph
                 }
 
 
-                if (systemNode.Type == SystemType.Tween)
+                //if (systemNode.Type == SystemType.Tween)
+                //{
+                //    var tweenNode = systemNode as TweenNode;
+
+                //    if (tweenNode==null)
+                //    {
+                //        Logger.LogError("Error, TweenNode node is null");
+                //    }
+                //    else
+                //    {
+                //        tweenNode.EndAnimationTransform = FindObjectWithTag(GameContstants.GetEndTransformTag(systemNode.name))?.transform;
+                //        DestroyImmediate(tweenNode.EndAnimationTransform.gameObject);
+                //    }
+
+                //}
+
+                if (systemNode.IsEndTransformAvailable)
                 {
-                    var tweenNode = systemNode as TweenNode;
-
-                    if (tweenNode==null)
-                    {
-                        Logger.LogError("Error, TweenNode node is null");
-                    }
-
-                    tweenNode.EndAnimationTransform = FindObjectWithTag(GameContstants.GetEndTransformTag(systemNode.name))?.transform;
-                    DestroyImmediate(tweenNode.EndAnimationTransform.gameObject);
+                    var endTransformGo = FindObjectWithTag(GameContstants.GetEndTransformTag(systemNode.name));
+                    DestroyImmediate(endTransformGo);
                 }
 
                 if (systemNode.NodeParent)
@@ -174,7 +183,7 @@ public class SystemsGraph : NodeGraph
                 }
                 
 
-                Logger.Log(nodeTypeString + " Node Controller and Implementation was removed");
+                Logger.Log(nodeTypeString + " Node Controller and Implementation + ^End transform^ +  was removed");
             }
         }
 

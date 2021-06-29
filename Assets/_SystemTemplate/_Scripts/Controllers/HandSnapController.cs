@@ -28,6 +28,15 @@ public class HandSnapController : SystemController, ISystemValidate
         _assignedNode = node as HandSnapNode;
     }
 
+    /// <summary>
+    /// Assigns the end transform in runtime.
+    /// </summary>
+    protected override void InitializeNodeParameters()
+    {
+        base.InitializeNodeParameters();
+        _assignedNode.EndTransform = _assignedNode.Graph.FindObjectWithTag(GameContstants.GetEndTransformTag(_assignedNode.name))?.transform;
+    }
+
     public bool IsValidted()
     {
         var source = _assignedNode.Implementations?.FirstOrDefault()?.transform?.parent?.GetComponent<ArmIK>()?.GetIKSolver() as IKSolverArm;
@@ -91,6 +100,17 @@ public class HandSnapController : SystemController, ISystemValidate
                 {
                     source.SetChain(chest: lowestChest, shoulder: shoulder, upperArm: upperArm, forearm: foreArm, hand: hand, root);
                 }
+
+                var hint = new GameObject("Hint");
+                hint.transform.parent = root;
+                hint.transform.position = foreArm.position;
+                hint.transform.forward = root.forward;
+                hint.transform.localScale = Vector3.one;
+
+                Destroy(hint, _assignedNode.Time+0.05f);
+
+                source.arm.bendGoal = hint.transform;
+                source.arm.bendGoalWeight = 1f;
             }
 
             var t = 0f;
@@ -98,11 +118,27 @@ public class HandSnapController : SystemController, ISystemValidate
 
             while(t < _assignedNode.Time)
             {
-                source.IKPosition = _assignedNode.GetEndTransform().position;
-                source.IKRotation = _assignedNode.GetEndTransform().rotation;
+                source.arm.target = _assignedNode.GetEndTransform();
 
-                source.IKPositionWeight = 1f;
-                source.IKRotationWeight = 1f;
+                if (_assignedNode._isAnimated)
+                {
+                    if (t<_assignedNode.AnimationDuration)
+                    {
+                        source.IKPositionWeight = t/ _assignedNode.AnimationDuration;
+                        source.IKRotationWeight = t / _assignedNode.AnimationDuration;
+                    }
+                    else
+                    {
+                        source.IKPositionWeight = 1f;
+                        source.IKRotationWeight = 1f;
+                    }
+                }
+                else
+                {
+                    source.IKPositionWeight = 1f;
+                    source.IKRotationWeight = 1f;
+                }
+
 
                 t += Time.deltaTime;
                 yield return null;

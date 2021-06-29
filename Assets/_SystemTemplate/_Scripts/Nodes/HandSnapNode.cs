@@ -14,9 +14,15 @@ public class HandSnapNode : SystemNode
     [Tooltip("Warning! Check with caution, it figures everything in runtime...")]
     public bool IsAutoFigure = false;
     public bool IsLeftHand = false;
-    public Transform EndTransform;
     public float Time = 5f;
 
+    public bool _isAnimated = false;
+    [ShowIf("_isAnimated")]
+    public float AnimationDuration = 1f;
+
+
+    [System.NonSerialized]
+    public Transform EndTransform;
 
     public HandSnapNode() : base()
     {
