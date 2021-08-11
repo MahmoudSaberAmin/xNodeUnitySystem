@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 /// If it is released near the end transform it auto snaps to it.
 /// </summary>
 [System.Serializable]
+[NodeTint(0.4f, 0.45f, 0.6f)]
 public class PickupNode : SystemNode
 {
     /// <summary>
@@ -22,8 +23,13 @@ public class PickupNode : SystemNode
     /// <summary>
     /// Transform to snap to
     /// </summary>
-    [NonSerialized] public Transform EndTransform;    
-    
+    [NonSerialized] public Transform EndTransform;
+
+
+
+    [HideInInspector]
+    public bool _isModified = false;
+
 
     /// <summary>
     /// Sets some default parameters like Input type and trigger tag.
@@ -64,4 +70,8 @@ public class PickupNode : SystemNode
     {
         return EndTransform;
     }
+
+
+    private Color GetColor() { return this._isModified == false ? Color.red : Color.white; }
+    private void SetColor() { this._isModified = true; }
 }

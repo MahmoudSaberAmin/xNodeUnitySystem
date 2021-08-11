@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 /// Snap Node is used to snap a node to the position of an end transform.
 /// </summary>
 [System.Serializable]
+[NodeTint(0.4f, 0.45f, 0.6f)]
 public class SnapNode : SystemNode
 {
     /// <summary>
