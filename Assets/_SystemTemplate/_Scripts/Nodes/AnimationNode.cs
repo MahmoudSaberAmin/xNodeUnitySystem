@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Linq;
+using Sirenix.OdinInspector;
 
 public enum AnimationName
 {
@@ -9,6 +10,7 @@ public enum AnimationName
 }
 
 [System.Serializable]
+[NodeTint(0, 0.3f, 0f)]
 public class AnimationNode : SystemNode
 {
     /// <summary>
@@ -18,6 +20,9 @@ public class AnimationNode : SystemNode
     [Space]
     public RuntimeAnimatorController AnimatorController;
 
+
+    [HideInInspector]
+    public bool _isModified = false;
 
     ///// <summary>
     ///// The avatar of the character, It is optional.
@@ -33,6 +38,8 @@ public class AnimationNode : SystemNode
     /// <summary>
     /// The animation to be assigned to the runtime animator.
     /// </summary>
+    [OnValueChanged("SetColor")]
+    [GUIColor("GetColor")]
     public AnimationClip Animation;
 
     ///// <summary>
@@ -70,5 +77,7 @@ public class AnimationNode : SystemNode
 
 
 
+    private Color GetColor() { return this._isModified == false ? Color.red : Color.white; }
+    private void SetColor() { this._isModified = true; }
 
 }

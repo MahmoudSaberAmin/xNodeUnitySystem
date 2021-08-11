@@ -3,6 +3,7 @@ using System.Linq;
 using Sirenix.OdinInspector;
 
 [System.Serializable]
+[NodeTint(0.4f, 0.35f, 0.1f)]
 public class AudioNode : SystemNode
 {
     /// <summary>
@@ -10,6 +11,8 @@ public class AudioNode : SystemNode
     /// </summary>
     [Header("Special Data...")]
     [Space]
+    [OnValueChanged("SetColor")]
+    [GUIColor("GetColor")]
     public AudioClip Clip;
     public bool IsCustomStartOrEnd = false;
 
@@ -18,8 +21,11 @@ public class AudioNode : SystemNode
     [Header("0 for end of file")]
     [ShowIf("IsCustomStartOrEnd")]
     public float EndTime = 0f;
-         
 
+
+
+    [HideInInspector]
+    public bool _isModified = false;
 
     public AudioNode() : base()
     {
@@ -39,4 +45,8 @@ public class AudioNode : SystemNode
         var src = Implementations.FirstOrDefault().AddComponent<AudioSource>();
         src.playOnAwake = false;
     }
+
+
+    private Color GetColor() { return this._isModified == false ? Color.red : Color.white; }
+    private void SetColor() { this._isModified = true; }
 }

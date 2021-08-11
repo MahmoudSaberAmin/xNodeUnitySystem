@@ -3,6 +3,7 @@ using System.Linq;
 using XNode;
 using UnityEngine.SceneManagement;
 using MyBox;
+using Sirenix.OdinInspector;
 
 public enum AnimationType
 {
@@ -20,6 +21,7 @@ public enum AnimationType
 /// Performs tween animation like movement, rotation, shake, fade and scale.
 /// </summary>
 [System.Serializable]
+[NodeTint(0.4f, 0.3f, 0.5f)]
 public class TweenNode : SystemNode
 {
     /// <summary>
@@ -27,6 +29,8 @@ public class TweenNode : SystemNode
     /// </summary>
     [Header("Special Data...")]
     [Space]
+    [OnValueChanged("SetColor")]
+    [GUIColor("GetColor")]
     public AnimationType AnimationType;
     /// <summary>
     /// True if the animation is required to loop.
@@ -67,6 +71,10 @@ public class TweenNode : SystemNode
     /// </summary>
     [ConditionalField("AnimationType", true, AnimationType.None)]
     public float Time = 1;
+
+
+    [HideInInspector]
+    public bool _isModified = false;
 
     public TweenNode() : base()
     {
@@ -116,4 +124,8 @@ public class TweenNode : SystemNode
     {
         return EndAnimationTransform;
     }
+
+
+    private Color GetColor() { return this._isModified == false ? Color.red : Color.white; }
+    private void SetColor() { this._isModified = true; }
 }

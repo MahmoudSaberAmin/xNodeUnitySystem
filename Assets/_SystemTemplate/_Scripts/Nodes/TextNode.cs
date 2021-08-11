@@ -1,4 +1,5 @@
 ﻿using MyBox;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 /// <summary>
@@ -6,6 +7,7 @@ using UnityEngine;
 /// </summary>
 [System.Serializable]
 [NodeWidth(300)]
+[NodeTint(0.2f, 0.2f, 0.4f)]
 public class TextNode : SystemNode
 {
     /// <summary>
@@ -22,6 +24,8 @@ public class TextNode : SystemNode
     /// Text to display to the user.
     /// </summary>
     [TextArea]
+    [OnValueChanged("SetColor")]
+    [GUIColor("GetColor")]
     public string TextString;
     /// <summary>
     /// Duration before stopping the text from being displayed.
@@ -39,6 +43,9 @@ public class TextNode : SystemNode
     /// </summary>
     [Range(0.1f, 5f)]    
     public float Scale = 1f;
+
+    [HideInInspector]
+    public bool _isModified = false;
 
     public TextNode() : base()
     {
@@ -60,4 +67,8 @@ public class TextNode : SystemNode
 
         WorldCanvasPrefab = Resources.Load<GameObject>("CanvasText");
     }
+
+
+    private Color GetColor() { return this._isModified == false ? Color.red : Color.white; }
+    private void SetColor() { this._isModified = true; }
 }
