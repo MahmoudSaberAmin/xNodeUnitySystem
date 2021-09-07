@@ -11,6 +11,7 @@ using XNode;
 using UnityEditor;
 #endif
 
+
 [CreateAssetMenu]
 public class SystemsGraph : NodeGraph
 {

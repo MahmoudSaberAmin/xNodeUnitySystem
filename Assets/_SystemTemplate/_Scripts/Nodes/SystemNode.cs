@@ -79,7 +79,7 @@ public abstract class SystemNode : Node
     /// </summary>
     [BackgroundColor(0f, 1f, 0f, 1f, true)]
     [ConditionalField("IsColorInput", false, true)]
-    public string _ = "Below Settings are changed";
+    public string _1 = "Below Settings are changed";
 
     /// <summary>
     /// the tag that the controller collider shoulkd check.
@@ -213,6 +213,7 @@ public abstract class SystemNode : Node
     /// </summary>
     [Output] public Empty Send;
 
+    
 
 
     /// <summary>

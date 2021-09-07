@@ -51,7 +51,7 @@ public class SystemNodeEditor : NodeEditor
 		SystemNode node = target as SystemNode;
 		SystemsGraph graph = node.graph as SystemsGraph;
 
-		if (!graph.IsGraphEditEnabled)
+		if (!graph.IsGraphEditEnabled || node.IsInBlock())
 		{
 			return;
 		}

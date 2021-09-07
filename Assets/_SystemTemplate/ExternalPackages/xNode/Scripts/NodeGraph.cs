@@ -3,6 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace XNode {
+
+    [Serializable]
+    public class SystemBlock
+    {
+        public string Id = null;
+
+        public float LeastX = float.MaxValue;
+        public float LeastY = float.MaxValue;
+        public float MostX = float.MinValue;
+        public float MostY = float.MinValue;
+
+        public string Comment = null;
+        public string SerializedNodeTypes = null;
+        public Color Color = Color.gray;
+    }
+
     /// <summary> Base class for all node graphs </summary>
     [Serializable]
     public abstract class NodeGraph : ScriptableObject {
@@ -10,6 +26,8 @@ namespace XNode {
         /// <summary> All nodes in the graph. <para/>
         /// See: <see cref="AddNode{T}"/> </summary>
         [SerializeField] public List<Node> nodes = new List<Node>();
+
+        public List<SystemBlock> Blocks = new List<SystemBlock>();
 
         /// <summary> Add a node to the graph by type (convenience method - will call the System.Type version) </summary>
         public T AddNode<T>() where T : Node {

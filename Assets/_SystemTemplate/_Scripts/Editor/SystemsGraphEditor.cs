@@ -35,9 +35,63 @@ public class SystemsGraphEditor : NodeGraphEditor
 		_scrollValueX = -NodeEditorWindow.current.panOffset.x;
 		_scrollValueY = -NodeEditorWindow.current.panOffset.y;
 
+		Debug.LogError("Started");
+
+		var gMenu = new GenericMenu();
+		var gContent = new GUIContent("Pack");
+
+		gMenu.AddItem(gContent, true, () => {
+			Debug.LogError("Pressed");
+			var selection = Selection.objects;
+			var isAllNodesAreSystemNodes = true;
+            foreach (var item in selection)
+            {
+                if (item is SystemNode)
+                {
+
+                }
+				else
+                {
+					isAllNodesAreSystemNodes = false;
+					Debug.LogError("A selected node is not a system node, did you select start node by mistake?");
+					break;
+
+				}
+            }
+
+            if (isAllNodesAreSystemNodes)
+            {
+				if(IsValidNodeSequencing(selection))
+                {
+					var guid = System.Guid.NewGuid().ToString();
+                    foreach (var node in selection)
+                    {
+						var systemNode = node as SystemNode;
+						systemNode.TryAssignBlock(guid);
+					}
+                }
+            }
+
+		});
+
+		gMenu.AddCustomContextMenuItems(Selection.objects);
 	}
 
+    private bool IsValidNodeSequencing(Object[] selection)
+    {
+		var areAllNodesFreeOfBlockId = true;
+		foreach (var node in selection)
+		{
+			var systemNode = node as SystemNode;
+			if(systemNode.IsInBlock())
+            {
+				areAllNodesFreeOfBlockId = false;
+				break;
+			}
+		}
 
+		return areAllNodesFreeOfBlockId;
+	}
 
     public override void OnGUI()
 	{
@@ -83,6 +137,12 @@ public class SystemsGraphEditor : NodeGraphEditor
 
 
 		GUI.Box(new Rect(0, 20, Screen.width, 55), "");
+
+        foreach (var block in sysGraph.Blocks)
+        {
+			GUI.Box(new Rect(0, 20, Screen.width, 55), "");
+		}
+
 
 		GUI.color = color;
 

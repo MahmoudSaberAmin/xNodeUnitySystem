@@ -124,6 +124,7 @@ namespace XNodeEditor {
             // Add actions to any number of selected nodes
             menu.AddItem(new GUIContent("Copy"), false, NodeEditorWindow.current.CopySelectedNodes);
             menu.AddItem(new GUIContent("Duplicate"), false, NodeEditorWindow.current.DuplicateSelectedNodes);
+            menu.AddItem(new GUIContent("Pack"), false, NodeEditorWindow.current.PackSelectedNodes);
 
             if (canRemove) menu.AddItem(new GUIContent("Remove"), false, NodeEditorWindow.current.RemoveSelectedNodes);
             else menu.AddItem(new GUIContent("Remove"), false, null);
