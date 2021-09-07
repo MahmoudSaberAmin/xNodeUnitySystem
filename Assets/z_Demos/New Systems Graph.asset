@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 10 Aug 2021 3 24 :39s Animation
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 520, y: -392}
+  position: {x: 1400, y: -1208}
   ports:
     keys:
     - Previous
@@ -560,6 +560,7 @@ MonoBehaviour:
   Graph: {fileID: 11400000}
   IsSent: 0
   MinDistance: 0.3
+  _isModified: 0
 --- !u!114 &-1588736156755278765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +574,7 @@ MonoBehaviour:
   m_Name: 10 Aug 2021 3 45 :46s Tween
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 120, y: 328}
+  position: {x: 1640, y: -232}
   ports:
     keys:
     - Previous
@@ -585,7 +586,10 @@ MonoBehaviour:
       _node: {fileID: -1588736156755278765}
       _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: Next
+        node: {fileID: 2895602077633433206}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -643,6 +647,87 @@ MonoBehaviour:
   IsImageComponent: 0
   EndAlpha: 1
   Time: 1
+  _isModified: 1
+--- !u!114 &-1237554970359751077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80037705726c2f46ad5ccf141e3abfc, type: 3}
+  m_Name: 7 Sep 2021 12 27 :20s Audio
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1090.6401, y: -644.4026}
+  ports:
+    keys:
+    - Previous
+    - Next
+    - Recieve
+    - Send
+    values:
+    - _fieldName: Previous
+      _node: {fileID: -1237554970359751077}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -1237554970359751077}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Recieve
+      _node: {fileID: -1237554970359751077}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Send
+      _node: {fileID: -1237554970359751077}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Help: 
+  Delay: 0
+  IsColorInput: 0
+  _: Below Settings are changed
+  TriggerTag: None
+  InputType: None
+  IsPreInputRequired: 0
+  IsPostInputRequired: 0
+  IsUnlocked: 0
+  IsValid: 1
+  Type: 3
+  IsDeleted: 0
+  Id: 7 Sep 2021 12 27 :20s
+  NodeParent: {fileID: 0}
+  Implementations:
+  - {fileID: 0}
+  Controller: {fileID: 0}
+  Graph: {fileID: 11400000}
+  IsSent: 0
+  Clip: {fileID: 8300000, guid: daf25c970d372cf438f0679f0c83b5fc, type: 3}
+  IsCustomStartOrEnd: 0
+  StartTime: 0
+  EndTime: 0
   _isModified: 1
 --- !u!114 &-695151783461535259
 MonoBehaviour:
@@ -751,6 +836,7 @@ MonoBehaviour:
   - {fileID: -4558402877025722590}
   - {fileID: -2161907339530070280}
   - {fileID: -4468556398591484613}
+  - {fileID: -1237554970359751077}
   current:
   - {fileID: -3613535263744251794}
   IsSystemV1: 0
@@ -771,7 +857,7 @@ MonoBehaviour:
   m_Name: 10 Aug 2021 3 41 :32s Text
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 600, y: 40}
+  position: {x: 1736, y: -824}
   ports:
     keys:
     - Previous
@@ -932,7 +1018,7 @@ MonoBehaviour:
   m_Name: 29 Jun 2021 9 38 :59s Hand
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -264, y: -88}
+  position: {x: 800, y: -88}
   ports:
     keys:
     - Previous
@@ -1109,7 +1195,8 @@ MonoBehaviour:
   IsDeleted: 1
   Id: 25 May 2021 10 32 :5s
   NodeParent: {fileID: 0}
-  Implementations: []
+  Implementations:
+  - {fileID: 0}
   Controller: {fileID: 0}
   Graph: {fileID: 11400000}
   IsSent: 0
@@ -1134,7 +1221,7 @@ MonoBehaviour:
   m_Name: 26 Jun 2021 2 30 :16s Audio
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 104, y: -184}
+  position: {x: 1200, y: -184}
   ports:
     keys:
     - Previous
@@ -1161,7 +1248,10 @@ MonoBehaviour:
       _node: {fileID: 2895602077633433206}
       _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: Previous
+        node: {fileID: -1588736156755278765}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1192,7 +1282,7 @@ MonoBehaviour:
   InputType: None
   IsPreInputRequired: 0
   IsPostInputRequired: 0
-  IsUnlocked: 1
+  IsUnlocked: 0
   IsValid: 1
   Type: 3
   IsDeleted: 0
@@ -1221,7 +1311,7 @@ MonoBehaviour:
   m_Name: 26 Jun 2021 2 38 :8s LookAt
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -280, y: 392}
+  position: {x: 800, y: 392}
   ports:
     keys:
     - Previous
