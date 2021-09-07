@@ -7,7 +7,7 @@ using UnityEngine;
 /// Controls the visibility of the gameobject that is parent to the implemntation gameobject.
 /// </summary>
 [System.Serializable]
-[NodeTint(0.275f, 0.275f, 0.275f)]
+[NodeTint(0.2f, 0.2f, 0.2f)]
 public class VisibilityNode : SystemNode
 {
     /// <summary>

@@ -3,7 +3,6 @@ using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
 using System;
-using System.Linq;
 using Object = UnityEngine.Object;
 
 namespace XNodeEditor {
@@ -139,101 +138,6 @@ namespace XNodeEditor {
                 EditorUtility.SetDirty(graph);
                 if (NodeEditorPreferences.GetSettings().autoSave) AssetDatabase.SaveAssets();
             }
-        }
-
-        internal void PackSelectedNodes()
-        {
-            Debug.LogError("Pressed");
-            var selection = Selection.objects;
-            var isAllNodesAreSystemNodes = true;
-            foreach (var item in selection)
-            {
-                if (item is XNode.Node)
-                {
-
-                }
-                else
-                {
-                    isAllNodesAreSystemNodes = false;
-                    Debug.LogError("A selected node is not a system node, did you select start node by mistake?");
-                    break;
-
-                }
-            }
-
-            if (isAllNodesAreSystemNodes)
-            {
-                if (IsValidNodeSequencing(selection))
-                {
-                    var guid = System.Guid.NewGuid().ToString();
-                    var block = new XNode.SystemBlock
-                    {
-                        Id = guid,
-                        Color = new Color(UnityEngine.Random.Range(0.1f, 0.35f), UnityEngine.Random.Range(0.1f, 0.35f), UnityEngine.Random.Range(0.1f, 0.35f)),
-                        Comment = "Enter your Comment Here",
-
-                    };
-
-                    (selection[0] as XNode.Node).graph.Blocks.Add(block);
-
-                    var leastX = float.MaxValue;
-                    var leastY = float.MaxValue;
-                    var mostX = float.MinValue;
-                    var mostY = float.MinValue;
-
-                    foreach (var node in selection)
-                    {
-                        var systemNode = node as XNode.Node;
-                        systemNode.TryAssignBlock(guid);
-                        block.SerializedNodeTypes += systemNode.name.Split(' ').LastOrDefault()+",";
-
-                        if (leastX > systemNode.position.x)
-                        {
-                            leastX = systemNode.position.x;
-                        }
-
-                        if (leastY > systemNode.position.y)
-                        {
-                            leastY = systemNode.position.y;
-                        }
-
-                        if (mostX < systemNode.position.x)
-                        {
-                            mostX = systemNode.position.x;
-                        }
-
-
-                        if (mostY < systemNode.position.y)
-                        {
-                            mostY = systemNode.position.y;
-                        }
-                    }
-
-
-                    block.LeastX = leastX;
-                    block.LeastY = leastY;
-                    block.MostX = mostX;
-                    block.MostY= mostY;
-                }
-            }
-        }
-
-
-
-        private bool IsValidNodeSequencing(System.Object[] selection)
-        {
-            var areAllNodesFreeOfBlockId = true;
-            foreach (var node in selection)
-            {
-                var systemNode = node as XNode.Node;
-                if (systemNode.IsInBlock())
-                {
-                    areAllNodesFreeOfBlockId = false;
-                    break;
-                }
-            }
-
-            return areAllNodesFreeOfBlockId;
         }
 
         private void DraggableWindow(int windowID) {

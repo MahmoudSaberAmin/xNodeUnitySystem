@@ -117,8 +117,6 @@ namespace XNode {
         /// <summary> Used during node instantiation to fix null/misconfigured graph during OnEnable/Init. Set it before instantiating a node. Will automatically be unset during OnEnable </summary>
         public static NodeGraph graphHotfix;
 
-        public string BlockId = null;
-
         protected void OnEnable() {
             if (graphHotfix != null) graph = graphHotfix;
             graphHotfix = null;
@@ -316,25 +314,6 @@ namespace XNode {
             /// <param name="dynamicPortList">If true, will display a reorderable list of outputs instead of a single port. Will automatically add and display values for lists and arrays </param>
             [Obsolete("Use constructor with TypeConstraint")]
             public OutputAttribute(ShowBackingValue backingValue, ConnectionType connectionType, bool dynamicPortList) : this(backingValue, connectionType, TypeConstraint.None, dynamicPortList) { }
-        }
-
-        public bool IsInBlock()
-        {
-            return string.IsNullOrWhiteSpace(BlockId) == false;
-        }
-
-        public bool TryAssignBlock(string guid)
-        {
-            if (IsInBlock())
-            {
-                Debug.LogError("this node already is in a block");
-                return false;
-            }
-            else
-            {
-                BlockId = guid;
-                return true;
-            }
         }
 
         /// <summary> Manually supply node class with a context menu path </summary>
